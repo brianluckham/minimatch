@@ -1,0 +1,11 @@
+@@ -729,7 +729,8 @@ class Minimatch {
+      }	      }
+      nlAfter = cleanAfter	      nlAfter = cleanAfter
+
+
+      const dollar = nlAfter === '' && isSub !== SUBPARSE ? '$' : ''	      const dollar = nlAfter === '' && isSub !== SUBPARSE ? '(?:$|\\/)' : ''
+
+      re = nlBefore + nlFirst + nlAfter + dollar + nlLast	      re = nlBefore + nlFirst + nlAfter + dollar + nlLast
+    }	    }
+
+
